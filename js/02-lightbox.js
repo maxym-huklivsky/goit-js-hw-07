@@ -7,10 +7,9 @@ function createGalleryMarkup(arr) {
     .map(({ preview, original, description }) => {
       return `
     <li class="gallery__item">
-    <a class="gallery__link" href="${original} data-lightbox='images' ">
+    <a class="gallery__link" href="${original}">
 		<img
 			class="gallery__image"
-      data-title='${description}'
 			src="${preview}"
 			alt="${description}"
 	 	/>
